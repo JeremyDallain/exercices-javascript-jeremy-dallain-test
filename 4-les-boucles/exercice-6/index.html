@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6</title>
+</head>
+<body>
+    <script>
+        const motDePasse = '1234';
+
+        let proposition = prompt("Veuillez entrer le mot de passe :")
+        
+        while (proposition !== motDePasse) {
+            proposition = prompt("Mot de passe incorrect, essayez à nouveau.")
+        }
+
+        alert('Accès autorisé.');
+    </script>
+</body>
+</html>
