@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6 fonction</title>
+</head>
+<body>
+    <script>
+        // ADDITION
+        function addition(a, b) {
+            // if (typeof a !== 'number') {
+            //     return "paramètres incorrects"
+            // }
+
+            // if (typeof b !== 'number') {
+            //     return "paramètres incorrects"
+            // }
+            
+            if (typeof a !== 'number' || typeof b !== 'number') {
+                return "paramètres incorrects"
+            }
+
+            return a + b
+        }
+
+        let resultatAddition = addition(15, 25)
+        console.log(resultatAddition);
+
+
+
+        // SOUSTRACTION
+
+        function soustraction(a, b) {
+            if (typeof a !== 'number' || typeof b !== 'number') {
+                return "paramètres incorrects"
+            }
+
+            return a - b
+        }
+
+        let resultatSoustraction = soustraction(45, 25)
+        console.log(resultatSoustraction);
+    </script>
+</body>
+</html>
