@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 2</title>
+</head>
+
+<body>
+    <script>
+        // A partir d’un tableau qui contient une liste d’animaux, affichez les séparés par une virgule, 
+        // mais dans le sens inverse et en majuscules (⚠️ regardez bien l’exemple).
+        // Résultat attendu :
+        // "POULE, TORTUE, LAPIN, SOURIS, POISSON, OISEAU, CHIEN, CHAT"
+        const mots = [
+            "chat",
+            "chien",
+            "oiseau",
+            "poisson",
+            "souris",
+            "lapin",
+            "tortue",
+            "poule"
+        ];
+
+        // console.log(mots)
+
+        // 1 - retourner le tableau (reverse) 
+        mots.reverse()
+        console.log(mots)
+
+        // 2 - transformer le tableau en string, en separant avec ', '
+        let motsJoints = mots.join(', ')
+        console.log(motsJoints)
+
+        // 3 - mettre en majuscule ma string
+        let resultatFinal = motsJoints.toUpperCase()
+        console.log(resultatFinal)
+
+        // Resultat en une ligne
+        // console.log(mots.reverse().join(', ').toUpperCase())
+    </script>
+</body>
+
+</html>
