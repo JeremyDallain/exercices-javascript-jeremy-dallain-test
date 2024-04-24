@@ -7,8 +7,17 @@
     <title>Exercice 3</title>
 </head>
 <body>
+    <button>changer la couleur</button>
 
     <script>
+        const bouton = document.querySelector('button')
+        const body = document.querySelector('body')
+        
+        bouton.addEventListener('click', function() {
+
+            body.style.background = 'red'
+            
+        })
 
     </script>
 </body>

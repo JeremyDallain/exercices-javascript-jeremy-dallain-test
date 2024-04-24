@@ -7,8 +7,18 @@
     <title>Exercice 4</title>
 </head>
 <body>
-
     <script>
+        function createTag(tagName, content) {
+            let elementHTML = document.createElement(tagName);
+            elementHTML.innerText = content;
+            return elementHTML;
+        }
+
+        const paragraphe = createTag('p', 'lorem ipsum')
+        const button = createTag('button', 'clickez')
+        
+        document.body.appendChild(paragraphe)
+        document.body.appendChild(button)
 
     </script>
 </body>
