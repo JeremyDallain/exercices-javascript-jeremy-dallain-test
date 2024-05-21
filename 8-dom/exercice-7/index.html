@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 7</title>
+    <style>
+        .raye {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>tache 1</li>
+        <li>tache 2</li>
+        <li>tache 3</li>
+        <li>tache 4</li>
+        <li>tache 5</li>
+    </ul>
+
+    <script>
+        const taches = document.querySelectorAll('li')
+
+        for (const tache of taches) {
+            tache.style.color = 'darkblue'
+
+            tache.addEventListener('click', function() {
+                // si ma tache à la classe 'raye' alors il l'enelver
+                // si ma tache n'a pas la classe 'raye', alors il la met
+                tache.classList.toggle('raye')
+            })
+        }
+    </script>
+</body>
+</html>

@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 5</title>
+    <style>
+        img {
+            width: 200px;
+            transition: all 0.5s;
+        }
+    </style>
 </head>
 <body>
+    <img src="dragon.png" alt="un dragon qui fume un gros cigare">
 
     <script>
+        // selectionner l'image
+        const image = document.querySelector('img')
 
+        // quand je survol mon image
+        image.addEventListener('mouseover', function() {
+            // l'image devient flou
+            image.style.filter = 'blur(5px)'
+
+            // l'image devient plus grosse
+            image.style.transform = 'scale(1.05)'
+
+            // l'image devient invisible
+            image.style.opacity = '0'
+        })
+
+        // quand je sort de mon image
+        image.addEventListener('mouseout', function() {
+            // l'image redevien net (j'enleve le flou)
+            image.style.filter = 'none'
+
+            // l'image redevienne a sa taille normale
+            image.style.transform = 'scale(1)'
+
+            // image redievient visible
+            image.style.opacity = '1'
+        })
     </script>
 </body>
 
